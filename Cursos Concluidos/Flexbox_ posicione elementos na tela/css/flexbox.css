@@ -1,0 +1,148 @@
+/* header (start) */
+
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+/* header (end) */
+
+/* main (start) */ 
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-right: 0;
+}
+
+.videoSobre .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+/* main (end) */
+
+/* footer (start) */
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 260px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+/* footer (start) */
+
+/* parte mobile */
+
+@media(max-width: 768px) {
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        flex-flow: column;
+    }
+    .cabecalhoPrincipal .container{
+        display: flex;
+        align-items: initial;
+        justify-content: space-between;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha() {
+		document.write("<br><hr>");
+	}
+
+	function mostra(texto) {
+		document.write(texto);
+        pulaLinha();
+	}
+
+    var numero = 20;
+
+    while(numero >= 0) {
+        mostra (numero);
+        numero = numero - 1;
+    }
+    mostra ("Fim!")
+</script>
