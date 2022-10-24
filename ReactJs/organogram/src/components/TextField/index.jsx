@@ -1,10 +1,12 @@
-import 'styles.scss'
+import './styles.scss'
 
-const TextField = () => {
+
+
+const TextField = (props) => {
     return (
-        <div>
-            <label className='text-field'>Name</label>
-            <input type={``} placeholder='Digite o seu nome' />
+        <div className='text-field'>
+            <label className='text-field'>{props.label}</label>
+            <input placeholder={props.placeholder} />
         </div>
     )
 }
