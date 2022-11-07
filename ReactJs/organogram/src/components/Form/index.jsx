@@ -1,4 +1,3 @@
-import './styles.scss'
 import TextField from '../TextField'
 import Dropdown from '../Dropdown'
 
@@ -14,7 +13,7 @@ const Form = (props) => {
     ]
 
     return (
-        <section className='form'>
+        <section className='flex justify-center mt-20 w-4/5 bg-color-primary-gray shadow-[10px_10px_30px_0_rgba(0,0,0,0.06)] px-9 py-18 radious-'>
             <form >
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 <TextField label='Nome' placeholder='Digite seu nome'/>
