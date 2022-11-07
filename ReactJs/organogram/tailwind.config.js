@@ -39,7 +39,11 @@ module.exports = {
         'lg': '0.5rem',
         'full': '9999px',
         'large': '12px',
-      }
+      },
+      fontFamily: {
+        title: ['Prata', 'serif'],
+        paragraph:['Montserrat', 'sans-serif']
+      },
     },
   },
   plugins: [],
