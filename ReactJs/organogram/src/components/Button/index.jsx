@@ -1,9 +1,7 @@
-import './styles.scss'
-
 const Button = (props) => {
     return (
         <div>
-            <button type='button'>{props}</button>
+            <button className="bg-aqua" type='button'>{props}</button>
         </div>
     )
 }

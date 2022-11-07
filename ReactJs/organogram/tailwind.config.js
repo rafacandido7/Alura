@@ -29,6 +29,7 @@ module.exports = {
           orange:'#FFBA05',
           darkOrange:'#FF8A29',
         },
+        aqua: '00FFFF',
       },
       borderRadius: {
         'none': '0',
