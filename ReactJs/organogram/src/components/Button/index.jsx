@@ -2,9 +2,7 @@ import './styles.scss'
 
 const Button = (props) => {
     return (
-        <div>
-            <button type='button'>{props}</button>
-        </div>
+            <button className='button' type='button'>{props.children}</button>
     )
 }
 

@@ -1,6 +1,7 @@
 import './styles.scss'
 import TextField from '../TextField'
 import Dropdown from '../Dropdown'
+import Button from '../Button'
 
 const Form = (props) => {
     const teamWorks = [
@@ -19,8 +20,12 @@ const Form = (props) => {
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 <TextField label='Nome' placeholder='Digite seu nome'/>
                 <TextField label='Cargo' placeholder='Digite seu cargo'/>
-                <TextField label='Imagem' placeholder='Digite o indereço da imagem'/>
+                <TextField label='Imagem' placeholder='Digite o endereço da imagem'/>
                 <Dropdown label='Time' item={teamWorks} placeholder='Escolha seu time'></Dropdown>
+                <Button>Criar Card</Button>
             </form>
         </section>
     )
+}
+
+export default Form
