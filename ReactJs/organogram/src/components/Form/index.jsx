@@ -14,14 +14,19 @@ const Form = (props) => {
         'Inovação e Gestão'
     ]
 
+    const toSave = (evento) => {
+        evento.preventDefault()
+        console.log('Form submitted')
+    }
+
     return (
         <section className='form'>
-            <form >
+            <form onSubmit={() => toSave()}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
-                <TextField label='Nome' placeholder='Digite seu nome'/>
-                <TextField label='Cargo' placeholder='Digite seu cargo'/>
+                <TextField mandatory={true} label='Nome' placeholder='Digite seu nome'/>
+                <TextField mandatory={true} label='Cargo' placeholder='Digite seu cargo'/>
                 <TextField label='Imagem' placeholder='Digite o endereço da imagem'/>
-                <Dropdown label='Time' item={teamWorks} placeholder='Escolha seu time'></Dropdown>
+                <Dropdown mandatory={true} label='Time' item={teamWorks} placeholder='Escolha seu time'></Dropdown>
                 <Button>Criar Card</Button>
             </form>
         </section>
